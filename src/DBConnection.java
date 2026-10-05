@@ -7,7 +7,7 @@ import java.sql.SQLException;
 public class DBConnection {
     private static final String URL = env("DB_URL", "jdbc:mysql://localhost:3306/blood_donor_web");
     private static final String USER = env("DB_USER", "root");
-    private static final String PASSWORD = env("DB_PASSWORD", "Aswin"); // local password
+    private static final String PASSWORD = env("DB_PASSWORD", "YOUR_PASSWORD"); // local password
 
     static String env(String key, String fallback) {
         String v = System.getenv(key);
